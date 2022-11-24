@@ -6,10 +6,9 @@ class QuizController extends AbstractController
 {
     public function index()
     {
-
+        session_start();
         $result = '';
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
             $q1 = $_POST['q1'];
             $q2 = $_POST['q2'];
             $q3 = $_POST['q3'];
@@ -70,8 +69,19 @@ class QuizController extends AbstractController
             } elseif ($q1 == '3' && $q2 == '3' && $q3 == '3') {
                 $result = "Indonésie";
             }
+            $_SESSION['result'] = $result;
         }
         return $this->twig->render('Home/quiz.html.twig', [
+            'result' => $result
+        ]);
+    }
+
+    public function pays()
+    {
+        session_start();
+        $result = $_SESSION['result'];
+
+        return $this->twig->render('Home/result.html.twig', [
             'result' => $result
         ]);
     }
