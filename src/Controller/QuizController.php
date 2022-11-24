@@ -67,7 +67,7 @@ class QuizController extends AbstractController
             } elseif ($q1 == '3' && $q2 == '2' && $q3 == '3') {
                 $result = "Grèce";
             } elseif ($q1 == '3' && $q2 == '3' && $q3 == '1') {
-                $result = "Vietnam";
+                $result = "Pérou";
             } elseif ($q1 == '3' && $q2 == '3' && $q3 == '2') {
                 $result = "Thailande";
             } elseif ($q1 == '3' && $q2 == '3' && $q3 == '3') {

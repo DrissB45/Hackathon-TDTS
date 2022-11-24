@@ -1,7 +1,7 @@
 {% extends "layout.html.twig" %}
 
 {% block content %}
-	<form method="post" action="result.php">
+	<form method="post" action="">
 
 		<h2 class="text-center my-5">De quel climat aimeriez-vous profiter ?</h2>
 		<div class="container">
@@ -45,7 +45,7 @@
 			</div>
 		</div>
 
-		<h2 class="text-center my-5">De quelles activités voulez-vous profiter ?</h2>
+		<h2 class="text-center my-5">Quelles activités voulez-vous pratiquer ?</h2>
 		<div class="container">
 			<div class="row text-center mb-2">
 				<div class="col-4">
@@ -59,17 +59,20 @@
 					Cuisine
 				</div>
 				<div class="col-4">
-					<img src="assets/images/farniente.jpeg" class="rounded">
+					<img src="assets/images/randonneur.jpeg" class="rounded">
 					<input type="radio" name="q3" value="3">
-					Farniente
+					Activités d'extérieur
 				</div>
 			</div>
 		</div>
 		<div class="d-flex justify-content-center my-5">
-			<button type="submit" class="">Découvrir quel pays est fait pour moi</button>
+			<button type="submit">Découvrir quel pays est fait pour moi</button>
 		</div>
 	</form>
 
-    {{result}}
+	<div class="d-flex justify-content-center">
+		<h3>Voici votre destination idéale : 
+        <a href="">{{result}}</a>
+	</div>
 
 {% endblock %}
