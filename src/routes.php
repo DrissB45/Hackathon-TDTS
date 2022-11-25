@@ -13,8 +13,7 @@ return [
     'items/show' => ['ItemController', 'show', ['id']],
     'items/add' => ['ItemController', 'add',],
     'items/delete' => ['ItemController', 'delete',],
-    'Results/quizz' => ['ResultsQuizzController', 'index',]
+    'result' => ['ResultsQuizzController', 'index',],
     'presentation' => ['PresentationController', 'index'],
     'quiz' => ['QuizController', 'index'],
-    'pays' => ['QuizController', 'pays'],
 ];

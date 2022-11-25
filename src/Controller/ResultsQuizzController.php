@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controller;
+use Symfony\Component\HttpClient\HttpClient;
 
 class ResultsQuizzController extends AbstractController
 {
@@ -9,11 +10,18 @@ class ResultsQuizzController extends AbstractController
      */
     public function index(): string
     {   
-        return $this->twig->render('Quizz/ResultsQuizz.html.twig');
+        session_start();
+        $result = $_SESSION['result'];
+
+        $client = HttpClient::create();
+        $response = $client->request('GET', 'https://restcountries.com/v3.1/name/' . $result);
+        $country = $response->toArray()[0];
+
+        return $this->twig->render('Quizz/ResultsQuizz.html.twig', [
+            'country' => $country,
+            'result' => $result
+        ]);
     }
-
-
-
 
     public function showImage()
     {
