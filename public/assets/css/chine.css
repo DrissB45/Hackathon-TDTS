@@ -1,0 +1,21 @@
+
+.fleur{
+
+    background-image: url(../../assets/images/chine.jpg);
+    background-size: 100%;
+    background-image: cover;
+    height: 500px;
+    color:rgb(251, 250, 249);
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+
