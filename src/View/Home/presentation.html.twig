@@ -1,11 +1,29 @@
 {% extends "layouts.html.twig" %}
 
-{% block content %}
-	<h1>Qui sommes-nous ?</h1>
-	<p>Bienvenue sur TwistedTrip ! Nous sommes Driss, Stéphanie, Teddy et Thyphen, 4 étudiants de la Wild Code School d'Orléans.</p>
-	<p>Ce projet a été réalisé dans le cadre d'un hackathon : un projet à réaliser sur le thème du voyage, en 36 heures.</p>
-	<p>Nous avons choisi de créer un quiz pour aider l'utilisateur à choisir une destination de voyage. Le principe est simple : en fonction
-    des réponses données aux questions du quiz, nous proposerons une idée de pays à visiter, avec un guide pratique correspondant à ce pays.</p>
-
-
+{% block stylesheet %}
+	<link rel="stylesheet" href="/assets/css/aboutUs.css">
 {% endblock %}
+
+{% block content %}
+
+	<h1 class="about text-center mb-4">Qui sommes-nous ?</h1>
+	<div>
+		<p class="about text-center">Bienvenue sur
+			<span class="text-success">TwistedTrip</span>
+			! Nous sommes Driss, Stéphanie, Teddy et Thyphen, 4 étudiants de la Wild Code School d'Orléans.</p>
+		<p class=" about text-center">Ce projet a été réalisé dans le cadre d'un hackathon : un projet à réaliser sur le thème du voyage, en 36 heures.</p>
+		<div class="d-flex justify-content-center">
+			<div class="row row-col-2 ">
+				<div class="col mx-3">
+					<img class="" src="../assets/images/accueil.jpeg" height="400" width="500">
+				</div>
+				<div class="col mx-3">
+					<img class="" src="../assets/images/van.jpeg" height="400" width="500">
+				</div>
+			</div>
+		</div>
+		<div class="d-flex flex-column align-items-center container my-4 border">
+			<p class="about text-center py-3 mx-1">Nous avons choisi de créer un quiz pour aider l'utilisateur à choisir une destination de voyage. Le principe est simple : en fonction des réponses données aux questions du quiz, nous proposerons une idée de pays à visiter, avec un guide pratique correspondant à ce pays.</p>
+		</div>
+
+	{% endblock %}
