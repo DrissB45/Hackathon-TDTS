@@ -15,4 +15,5 @@ return [
     'items/delete' => ['ItemController', 'delete',],
     'presentation' => ['PresentationController', 'index'],
     'quiz' => ['QuizController', 'index'],
+    'pays' => ['QuizController', 'pays'],
 ];
