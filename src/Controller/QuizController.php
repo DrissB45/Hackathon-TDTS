@@ -13,9 +13,8 @@ class QuizController extends AbstractController
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $q1 = $_POST['q1'];
             $q2 = $_POST['q2'];
-            $q3 = $_POST['q3'];
-
-
+            $q3 = $_POST['q3'];     
+            
             if ($q1 == '1' && $q2 == '1' && $q3 == '1') {
                 $result = "Norway";
             } elseif ($q1 == '1' && $q2 == '1' && $q3 == '2') {
