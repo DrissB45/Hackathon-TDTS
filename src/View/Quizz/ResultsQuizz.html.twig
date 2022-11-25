@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+{% include 'layout.html.twig' %}
+{% block stylesheet %}
+<link rel="stylesheet" href="/assets/css/resultquizz.css">{% endblock %}
+{% block content %}
+<script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+<div class="headofpage" id="header">
+    <h1 class="title">Découvrez votre départ en terre inconnue.</h1>
+</div>
+<div class="containercountry d-flex align-items-center justify-content-center gap-5">
+    <div class="card mt-4" style="width: 18rem;">
+        <img class="card-img-top" src="/assets/images/France1.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">France</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+        </div>
+    </div>
+    <div class="card mt-4" style="width: 18rem;">
+        <img class="card-img-top" src="/assets/images/France1.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">France</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+        </div>
+    </div>
+    <div class="card mt-4" style="width: 18rem;">
+        <img class="card-img-top" src="/assets/images/France1.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">France</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+        </div>
+    </div>
+</div>
+<div id="carouselControls" class="carousel slide pt-3" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/assets/images/France1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<div class="guideofcontainer d-flex">
+    <h2 class="titleguide justify-content-center align-items-center pt-3 pb-3">Guide Pratique avant le départ pour la
+        France</h2>
+</div>
+<div class="card mb-3">
+    <div class="card-header text-center fs-5 fs-5 fw-bold">
+        Devise
+    </div>
+    <div class="card-body">
+        <blockquote class="blockquote mb-0 text-center">
+            <p>La devise en France est Euro.</p>
+        </blockquote>
+    </div>
+</div>
+<div class="card mb-3">
+    <div class="card-header text-center fs-5 fw-bold">
+        Langue principale
+    </div>
+    <div class="card-body text-center">
+        <blockquote class="blockquote mb-0 text-center">
+            <p>La langue principale en France est le Francais.</p>
+        </blockquote>
+    </div>
+</div>
+<div class="card mb-3">
+    <div class="card-header text-center fs-5 fw-bold">
+        Quote
+    </div>
+    <div class="card-body">
+        <blockquote class="blockquote mb-0 text-center">
+            <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+    </div>
+</div>
+<div class="card mb-3">
+    <div class="card-header text-center fs-5 fw-bold">
+        Quote
+    </div>
+    <div class="card-body">
+        <blockquote class="blockquote mb-0 text-center">
+            <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+    </div>
+</div>
+<div class="card mb-3">
+    <div class="card-header text-center fs-5 fw-bold">
+        Quote
+    </div>
+    <div class="card-body">
+        <blockquote class="blockquote mb-0 text-center">
+            <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+    </div>
+</div>
+<div class="card mb-3">
+    <div class="card-header text-center fs-5 fw-bold">
+        Quote
+    </div>
+    <div class="card-body">
+        <blockquote class="blockquote mb-0 text-center">
+            <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+    </div>
+</div>
+{% endblock %}
