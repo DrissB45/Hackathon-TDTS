@@ -1,0 +1,87 @@
+{% extends "layouts.html.twig" %}
+
+
+{% block stylesheet %}
+	<link rel="stylesheet" href="/assets/css/resultquizz.css">
+{% endblock %}
+
+{% block content %}
+	<script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+	<div class="headofpage" id="header">
+		<h1 class="title">Découvrez votre départ en terre inconnue.</h1>
+	</div>
+	<div class="containercountry d-flex align-items-center justify-content-center gap-5 mt-5">
+		<div class="card mt-4" style="width: 18rem;">
+			<img class="card-img-top" src="/assets/images/jap.jpeg" alt="Card image cap">
+		</div>
+		<div class="card mt-4" style="width: 18rem;">
+			<img class="card-img-top" src="/assets/images/sahara.jpeg" alt="Card image cap">
+		</div>
+		<div class="card mt-4" style="width: 18rem;">
+			<img class="card-img-top" src="/assets/images/perhentian.jpeg" alt="Card image cap">
+		</div>
+	</div>
+	
+
+	<div class="guideofcontainer d-flex mt-5">
+		<h2 class="titleguide justify-content-center align-items-center pt-3 pb-3">Guide Pratique avant le départ pour :
+			{{result}}</h2>
+	</div>
+	<div class="card mb-3">
+		<div class="card-header text-center fs-5 fs-5 fw-bold">
+			Population
+		</div>
+		<div class="card-body">
+			<blockquote class="blockquote mb-0 text-center">
+				<p>La population du pays est de
+					{{country.population}}
+					habitants.</p>
+			</blockquote>
+		</div>
+	</div>
+	<div class="card mb-3">
+		<div class="card-header text-center fs-5 fw-bold">
+			Drapeau
+		</div>
+		<div class="card-body">
+			<blockquote class="blockquote mb-0 text-center">
+				<p>Le drapeau du pays est
+					{{country.flag}}</p>
+			</blockquote>
+		</div>
+		<div class="card mb-3">
+			<div class="card-header text-center fs-5 fw-bold">
+				Capitale
+			</div>
+			<div class="card-body">
+				<blockquote class="blockquote mb-0 text-center">
+					<p>La capitale du pays est
+						{{country.capital[0]}}.</p>
+				</blockquote>
+			</div>
+		</div>
+		<div class="card mb-3">
+			<div class="card-header text-center fs-5 fw-bold">
+				Fuseau Horaire
+			</div>
+			<div class="card-body">
+				<blockquote class="blockquote mb-0 text-center">
+					<p>Le fuseau horaire est
+						{{country.timezones[0]}}.</p>
+				</blockquote>
+			</div>
+		</div>
+	</div>
+	<div class="card mb-3">
+		<div class="card-header text-center fs-5 fw-bold">
+			Langue principale
+		</div>
+		<div class="card-body text-center">
+			<blockquote class="blockquote mb-0 text-center">
+				<p>La langue principale du pays est :
+					{{country.lang[0]}}.</p>
+			</blockquote>
+		</div>
+	</div>
+
+{% endblock %}

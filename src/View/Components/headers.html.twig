@@ -1,0 +1,31 @@
+{% extends "layout.html.twig" %}
+
+{% block stylesheet %}
+	<link rel="stylesheet" href="/assets/css/headers.css">
+{% endblock %}
+
+
+{% block header %}
+	<nav class="navbar sticky-top navbar-expand-lg py-3 bg-light">
+		<div class="container">
+			<a href="/" class="navbar-brand text-uppercase font-weight-bold">Twisted Trip</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div id="navbarSupportedContent" class="collapse navbar-collapse">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a href="/" class="nav-link text-uppercase font-weight-bold">Accueil
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="/quiz" class="nav-link text-uppercase font-weight-bold">Quiz</a>
+					</li>
+					<li class="nav-item">
+						<a href="/presentation" class="nav-link text-uppercase font-weight-bold">Qui sommes-nous ?</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+{% endblock %}

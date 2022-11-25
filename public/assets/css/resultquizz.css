@@ -1,0 +1,62 @@
+.headofpage {
+display:flex;
+height: 70vh;
+width:100%;
+background-image:url('/assets/images/road3.jpeg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.title {
+    font-size: 3em;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    color:white;
+    font-weight: 800;
+}
+
+.arrow-down {
+    height: 100px;
+    width: 130px;
+    margin-block-start: -50px;
+    opacity: 0.50;
+}
+
+.arrow-down:first-of-type {
+    margin-block-start: -10px;
+}
+
+.bounce {
+    animation: bounce 2.5s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(30px);
+    }
+    60% {
+        transform: translateY(25px);
+    }
+}
+
+    .titleguide {
+        font-size: 3em;
+        justify-content: center;
+        align-items: center;
+        margin:auto;
+        color:black;
+        font-weight: 800;
+    }
+
+    
+
+
