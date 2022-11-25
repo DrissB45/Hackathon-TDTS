@@ -1,0 +1,10 @@
+body {
+    background-image: url(/assets/images/page-accueil.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main {
+    font-family: var(--content-font);
+}
