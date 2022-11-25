@@ -1,6 +1,7 @@
 .navbar {
     font-family: var(--tool-font);
-    background-color: rgba(243, 235, 235, 0.15);
+    --bs-secondary-rgb: rgb(138, 138, 138);
+    --bs-secondary: rgb(var(--bs-secondary-rgb));
 }
 
 .nav-link {
