@@ -14,4 +14,7 @@ return [
     'items/add' => ['ItemController', 'add',],
     'items/delete' => ['ItemController', 'delete',],
     'Results/quizz' => ['ResultsQuizzController', 'index',]
+    'presentation' => ['PresentationController', 'index'],
+    'quiz' => ['QuizController', 'index'],
+    'pays' => ['QuizController', 'pays'],
 ];

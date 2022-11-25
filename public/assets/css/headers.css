@@ -1,0 +1,9 @@
+.navbar {
+    font-family: var(--tool-font);
+    --bs-secondary-rgb: rgb(138, 138, 138);
+    --bs-secondary: rgb(var(--bs-secondary-rgb));
+}
+
+.nav-link {
+    color: rgb(22, 22, 22);
+}

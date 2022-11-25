@@ -1,0 +1,33 @@
+body {
+    font-family: var(--content-font);
+    background-color: rgb(253, 253, 253);
+}
+
+.result {
+    text-decoration: none;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    filter: grayscale(0);
+    transition: .3s ease-in-out;
+    border: 2px solid black;
+}
+
+label {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+input:active {
+    border-radius: 1px solid black;
+    box-shadow: 0px 0px 0px 6px rgba(37, 172, 161, 0.3);
+    
+}
+
+
